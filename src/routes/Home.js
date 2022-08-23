@@ -23,7 +23,7 @@ class Home extends React.Component{
   render(){
     const { isLoading, movies } = this.state;
     return (
-    <selection className="container">
+    <section className="container">
       {isLoading ? (
         <div className="loader">
           <span className="loader__test">Loading...</span>
@@ -40,7 +40,7 @@ class Home extends React.Component{
             genres = {movie.genres}
           /> ))}
       </div>)}
-    </selection>
+    </section>
     );
   }
 }
